@@ -5,17 +5,21 @@
 
     /* 
         These are by no means final. I chose these colors because they're easy
-        to differentiate while building.
+        to differentiate while building. We might end up not using all of them.
     */
 
-    --primary-bg-color: white;
-    --primary-fg-color: black;
-    --primary-accent-color: red;
-    --primary-highlight-color: pink;
-    --secondary-bg-color: black;
-    --secondary-fg-color: white;
-    --secondary-accent-color: green;
-    --secondary-highlight-color: blue;
+    --content-bg-color: white;
+    --content-fg-color: black;
+    --content-accent-color: red;
+    --content-highlight-color: pink;
+    --nav-bg-color: black;
+    --nav-fg-color: white;
+    --nav-accent-color: green;
+    --nav-highlight-color: blue;
+    --footer-bg-color: grey;
+    --footer-fg-color: white;
+    --footer-accent-color: green;
+    --footer-highlight-color: black;
 }
 
 *{
@@ -24,17 +28,17 @@
 }
 
 body{
-    background-color: var(--primary-bg-color);
-    color: var(--primary-fg-color);
+    background-color: var(--content-bg-color);
+    color: var(--content-fg-color);
     font-family: sans-serif;
 }
 
 nav{
     width: 100%;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--nav-bg-color);
     background-opacity: 50%;
     text-align: center;
-    color: var(--secondary-fg-color);
+    color: var(--nav-fg-color);
     padding: 0.5%;
 }
 
@@ -46,20 +50,24 @@ nav h3{
 
 nav a{
     text-decoration: none;
-    color: var(--secondary-accent-color);
+    color: var(--nav-accent-color);
     padding: 5px;
     display: inline-block;
-    border: solid 1px var(--secondary-bg-color);
+    border: solid 1px var(--nav-bg-color);
     border-radius: 10%;
 }
 
 nav a:hover{
-    color: var(--secondary-highlight-color);
-    background-color: var(--secondary-accent-color);
-    border-color: var(--secondary-accent-color);
+    color: var(--nav-highlight-color);
+    background-color: var(--nav-accent-color);
+    border-color: var(--nav-accent-color);
 }
 
 section#content{
     padding: 1%
-    
+}
+
+footer{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-fg-color);
 }
