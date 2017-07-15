@@ -1,4 +1,13 @@
+/* TODO: Find a nice, handwriting-styled font for the nav bar. */
+
 :root{
+    /* Use color variables instead of using actual values in rules. */
+
+    /* 
+        These are by no means final. I chose these colors because they're easy
+        to differentiate while building.
+    */
+
     --primary-bg-color: white;
     --primary-fg-color: black;
     --primary-accent-color: red;
@@ -17,22 +26,39 @@
 body{
     background-color: var(--primary-bg-color);
     color: var(--primary-fg-color);
+    font-family: sans-serif;
 }
 
 nav{
     width: 100%;
-    height: 8%;
     background-color: var(--secondary-bg-color);
     background-opacity: 50%;
     text-align: center;
     color: var(--secondary-fg-color);
+    padding: 0.5%;
+}
+
+nav h3{
+    float:left;
+    display: inline-block;
+    width: 20%;
 }
 
 nav a{
     text-decoration: none;
     color: var(--secondary-accent-color);
+    padding: 5px;
+    display: inline-block;
+    border: solid 1px var(--secondary-bg-color);
+    border-radius: 10%;
 }
 
 nav a:hover{
     color: var(--secondary-highlight-color);
+    background-color: var(--secondary-accent-color);
+    border-color: var(--secondary-accent-color);
+}
+
+section#content{
+    
 }
