@@ -77,6 +77,10 @@ div#content-container{
     min-height: 80%;
 }
 
+div#content{
+    padding: 1%;
+}
+
 footer{
     background-color: var(--footer-bg-color);
     color: var(--footer-fg-color);
