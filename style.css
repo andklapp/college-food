@@ -36,3 +36,26 @@ nav a{
 nav a:hover{
     color: var(--secondary-highlight-color);
 }
+
+div#trademark>a
+{
+    text-decoration: none;
+    color: var(--primary-fg-color);
+}
+
+div#trademark>a:hover
+{
+    color: var(--primary-bg-color);
+}
+div#trademark
+{
+    border-top: solid 1px grey;
+    padding-top: .5em;
+    margin: 0% 1%;
+    clear: both;
+    color: var(--primary-bg-color);
+    font-size: .80em;
+
+
+
+
