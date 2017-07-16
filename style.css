@@ -46,7 +46,7 @@ body{
 nav{
     background-color: var(--nav-bg-color);
     background-opacity: 50%;
-    text-align: center;
+    text-align: right;
     color: var(--nav-fg-color);
     min-height: 10%;
 }
@@ -54,6 +54,7 @@ nav{
 nav h3{
     float:left;
     display: inline-block;
+    text-align: left;
     width: 20%;
     margin: 1.5%;
 }
@@ -65,6 +66,7 @@ nav a{
     border: solid 1px var(--nav-accent-color);
     border-radius: 10%;
     padding: 1%;
+    margin: 0.5% 0.1%;
 }
 
 nav a:hover{
