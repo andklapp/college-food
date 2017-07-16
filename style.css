@@ -1,12 +1,30 @@
+/* TODO: Find a nice, handwriting-styled font for the nav bar. */
+/*
+    Do not change height, margins, or padding for div#nav-container,
+    div#content-container, or div#footer-container. It will make the site not
+    fit the the screen. Use margins for the elements inside them instead.
+*/
+
 :root{
-    --primary-bg-color: white;
-    --primary-fg-color: black;
-    --primary-accent-color: red;
-    --primary-highlight-color: pink;
-    --secondary-bg-color: black;
-    --secondary-fg-color: white;
-    --secondary-accent-color: green;
-    --secondary-highlight-color: blue;
+    /* Use color variables instead of using actual values in rules. */
+
+    /*
+        These are by no means final. I chose these colors because they're easy
+        to differentiate while building. We might end up not using all of them.
+    */
+
+    --content-bg-color: white;
+    --content-fg-color: black;
+    --content-accent-color: red;
+    --content-highlight-color: pink;
+    --nav-bg-color: black;
+    --nav-fg-color: white;
+    --nav-accent-color: green;
+    --nav-highlight-color: blue;
+    --footer-bg-color: grey;
+    --footer-fg-color: white;
+    --footer-accent-color: green;
+    --footer-highlight-color: black;
 }
 
 *{
@@ -14,48 +32,77 @@
     margin: 0px;
 }
 
+html{
+    height: 100%;
+}
+
 body{
-    background-color: var(--primary-bg-color);
-    color: var(--primary-fg-color);
+    background-color: var(--content-bg-color);
+    color: var(--content-fg-color);
+    font-family: sans-serif;
+    height: 100%;
+}
+
+div#nav-container{
+    background-color: var(--nav-bg-color);
+    background-opacity: 50%;
+    color: var(--nav-fg-color);
+    min-height: 10%;
 }
 
 nav{
-    width: 100%;
-    height: 8%;
-    background-color: var(--secondary-bg-color);
-    background-opacity: 50%;
-    text-align: center;
-    color: var(--secondary-fg-color);
+    text-align: right;
+}
+
+nav h3{
+    float:left;
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+    margin: 1.5%;
 }
 
 nav a{
     text-decoration: none;
-    color: var(--secondary-accent-color);
+    color: var(--nav-accent-color);
+    display: inline-block;
+    border: solid 1px var(--nav-accent-color);
+    border-radius: 10%;
+    padding: 1%;
+    margin: 0.6% 0.1%;
 }
 
 nav a:hover{
-    color: var(--secondary-highlight-color);
+    color: var(--nav-highlight-color);
+    background-color: var(--nav-accent-color);
+    border-color: var(--nav-accent-color);
 }
 
-div#trademark>a
-{
+div#content-container{
+    min-height: 80%;
+}
+
+div#content{
+    padding: 1%;
+}
+
+div#footer-container{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-fg-color);
+    height: 10%;
+}
+
+footer{
+    border-top: solid 1px var(--footer-fg-color);
+    padding: 1%;
+    text-align: center;
+}
+
+footer a{
     text-decoration: none;
-    color: var(--primary-fg-color);
+    color: var(--footer-highlight-color);
 }
 
-div#trademark>a:hover
-{
-    color: var(--primary-bg-color);
+footer a:hover{
+    color: var(--footer-accent-color);
 }
-div#trademark
-{
-    border-top: solid 1px grey;
-    padding-top: .5em;
-    margin: 0% 1%;
-    clear: both;
-    color: var(--primary-bg-color);
-    font-size: .80em;
-
-
-
-
