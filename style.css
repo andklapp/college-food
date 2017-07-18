@@ -43,6 +43,10 @@ body{
     height: 100%;
 }
 
+h3, h4{
+    color: var(--content-accent-color);
+}
+
 div#nav-container{
     background-color: var(--nav-bg-color);
     background-opacity: 50%;
@@ -90,6 +94,25 @@ div#footer-container{
     background-color: var(--footer-bg-color);
     color: var(--footer-fg-color);
     height: 10%;
+}
+
+#recipe-container{
+    width: 98%;
+    padding: 1%;
+}
+
+#ingredients{
+    float: left;
+    width: 40%;
+}
+
+#ingredients>ul{
+    list-style: square;
+}
+
+#process{
+    float: right;
+    width: 50%;
 }
 
 footer{
