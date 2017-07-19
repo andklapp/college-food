@@ -14,17 +14,17 @@
     */
 
     --content-bg-color: white;
-    --content-fg-color: black;
-    --content-accent-color: red;
-    --content-highlight-color: pink;
+    --content-fg-color: #9E9E9E;
+    --content-accent-color: black;
+    --content-highlight-color: #A8DC3F;
     --nav-bg-color: black;
-    --nav-fg-color: white;
-    --nav-accent-color: green;
-    --nav-highlight-color: blue;
-    --footer-bg-color: grey;
-    --footer-fg-color: white;
-    --footer-accent-color: green;
-    --footer-highlight-color: black;
+    --nav-fg-color: white; /* not actually used */
+    --nav-accent-color: #A8DC3F;
+    --nav-highlight-color: white;
+    --footer-bg-color: #1C1C1C;
+    --footer-fg-color: #9E9E9E;
+    --footer-accent-color: #A8DC3F;
+    --footer-highlight-color: white;
 }
 
 *{
@@ -68,13 +68,14 @@ nav h3{
     text-align: left;
     width: 20%;
     margin: 1.5%;
+    color: var(--nav-accent-color);
 }
 
 nav a{
     text-decoration: none;
-    color: var(--nav-accent-color);
+    color: var(--nav-highlight-color);
     display: inline-block;
-    border: solid 1px var(--nav-accent-color);
+    border: solid 1px var(--nav-bg-color);
     border-radius: 10%;
     padding: 1%;
     margin: 0.6% 0.1%;
