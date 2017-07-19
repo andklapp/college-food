@@ -120,6 +120,30 @@ div#footer-container{
     width: 50%;
 }
 
+input{
+    margin: 1%;
+    padding: 0.5em;
+    border: 1px solid var(--content-accent-color);
+    border-radius: 5px;
+}
+
+textarea{
+    padding: 0.5em;
+    margin: 0% 1%;
+    border: 1px solid var(--content-accent-color);
+    border-radius: 5px;
+}
+
+button{
+    margin: 1%;
+    background-color: var(--content-highlight-color);
+    color: var(--content-bg-color);
+    padding: 0.5em;
+
+    border: 1px solid var(--content-highlight-color);
+    border-radius: 5px;
+}
+
 footer{
     border-top: solid 1px var(--footer-fg-color);
     padding: 1%;
