@@ -47,6 +47,10 @@ h3, h4{
     color: var(--content-accent-color);
 }
 
+p{
+    margin: 1% 0%;
+}
+
 div#nav-container{
     background-color: var(--nav-bg-color);
     background-opacity: 50%;
