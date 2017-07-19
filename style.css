@@ -51,6 +51,15 @@ p{
     margin: 1% 0%;
 }
 
+a{
+    text-decoration: none;
+    color: var(--content-highlight-color);
+}
+
+a:hover{
+    color: var(--content-accent-color);
+}
+
 div#nav-container{
     background-color: var(--nav-bg-color);
     background-opacity: 50%;
@@ -142,6 +151,18 @@ button{
 
     border: 1px solid var(--content-highlight-color);
     border-radius: 5px;
+}
+
+#recipe-list{
+    padding: 1%;
+}
+
+#recipe-list>ul{
+    list-style: square;
+}
+
+#recipe-list>ul>li{
+    padding: 0.5em;
 }
 
 footer{
