@@ -1,0 +1,21 @@
+/* containers.css defines the container layout and sizing */
+
+html{
+    height: 100%;
+}
+
+div#nav-container{
+    min-height: 10%;
+}
+
+div#not-nav-container{
+    min-height: 89%;
+}
+
+div#content-container{
+    min-height: 89%;
+}
+
+footer{
+    min-height: 10%;
+}

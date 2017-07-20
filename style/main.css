@@ -17,7 +17,7 @@
     --content-fg-color: #9E9E9E;
     --content-accent-color: black;
     --content-highlight-color: #A8DC3F;
-    --nav-bg-color: black;
+    --nav-bg-color: rgb(0, 0, 0, .75);
     --nav-fg-color: white; /* not actually used */
     --nav-accent-color: #A8DC3F;
     --nav-highlight-color: white;
@@ -30,10 +30,6 @@
 *{
     padding: 0px;
     margin: 0px;
-}
-
-html{
-    height: 100%;
 }
 
 body{
@@ -62,9 +58,7 @@ a:hover{
 
 div#nav-container{
     background-color: var(--nav-bg-color);
-    background-opacity: 50%;
     color: var(--nav-fg-color);
-    min-height: 10%;
 }
 
 nav{
@@ -96,18 +90,8 @@ nav a:hover{
     border-color: var(--nav-accent-color);
 }
 
-div#content-container{
-    min-height: 80%;
-}
-
 div#content{
     padding: 1%;
-}
-
-div#footer-container{
-    background-color: var(--footer-bg-color);
-    color: var(--footer-fg-color);
-    height: 10%;
 }
 
 #recipe-container{
@@ -169,6 +153,8 @@ footer{
     border-top: solid 1px var(--footer-fg-color);
     padding: 1%;
     text-align: center;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-fg-color);
 }
 
 footer a{
