@@ -59,9 +59,6 @@ a:hover{
 div#nav-container{
     background-color: var(--nav-bg-color);
     color: var(--nav-fg-color);
-    position: fixed;
-    width: 100%;
-    top: 0px;
 }
 
 nav{
@@ -154,8 +151,8 @@ button{
 
 footer{
     border-top: solid 1px var(--footer-fg-color);
-    padding: 1%;
     text-align: center;
+    padding: 1%;
     background-color: var(--footer-bg-color);
     color: var(--footer-fg-color);
 }

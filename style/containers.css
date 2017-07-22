@@ -1,26 +1,25 @@
 /* containers.css defines the container layout and sizing */
 
-html{
-    height: 100%;
+html, body{
+    height: 100vh;
 }
 
 div#nav-container{
-    min-height: 50px;
+    min-height: 10vh;
     position: fixed;
+    top: 0px;
     width: 100%;
 }
 
 div#not-nav-container{
-    margin-top: 50px;
-    min-height: 89%;
+    padding-top: 10vh;
+    min-height: 90vh;
 }
 
-/*
 div#content-container{
-    min-height: 89%;
+    min-height: 81vh;
 }
-*/
 
 footer{
-    min-height: 10%;
+    min-height: 5vh;
 }
