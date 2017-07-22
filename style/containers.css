@@ -5,16 +5,21 @@ html{
 }
 
 div#nav-container{
-    min-height: 10%;
+    min-height: 50px;
+    position: fixed;
+    width: 100%;
 }
 
 div#not-nav-container{
+    margin-top: 50px;
     min-height: 89%;
 }
 
+/*
 div#content-container{
     min-height: 89%;
 }
+*/
 
 footer{
     min-height: 10%;

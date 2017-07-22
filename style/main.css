@@ -59,6 +59,9 @@ a:hover{
 div#nav-container{
     background-color: var(--nav-bg-color);
     color: var(--nav-fg-color);
+    position: fixed;
+    width: 100%;
+    top: 0px;
 }
 
 nav{
