@@ -1,5 +1,5 @@
 
-menu_collapse_width = 720;
+menu_collapse_width = 1000;
 nav_height = 50;
 url_variables = url_variables_to_object();
 
