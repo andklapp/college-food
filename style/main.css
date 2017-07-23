@@ -203,11 +203,16 @@ button#to-top {
   background-color: var(--content-accent-color);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
 }
 
 button#to-top:hover {
   background-color: var(--content-highlight-color);
+}
+
+button#to-top>img{
+  width: 30px;
+  height: 30px;
 }
 
