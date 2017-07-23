@@ -16,14 +16,14 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
         if($(window).scrollTop() > nav_height) {
-            $('#mainBtn').show();
+            $('button#to-top').show();
         }
         else {
-            $('#mainBtn').hide();
+            $('button#to-top').hide();
         }
     });
 
-    $('#mainBtn').click(function () {
+    $('button#to-top').click(function () {
         $(window).scrollTop(0);
     });
 

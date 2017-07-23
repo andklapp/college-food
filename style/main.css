@@ -193,7 +193,7 @@ footer a:hover{
 }
 
 
-#mainBtn {
+button#to-top {
   display: none;
   position: fixed;
   bottom: 30px;
@@ -208,7 +208,7 @@ footer a:hover{
   border-radius: 10px;
 }
 
-#mainBtn:hover {
+button#to-top:hover {
   background-color: green;
 }
 
