@@ -31,8 +31,8 @@ function url_variables_to_object() {
 }
 
 function load_page(page_name) {
+    // TODO: Error handling!
     var page_url = './pages/' + page_name + '.html';
-    alert(page_url);
     if(page_name) {
         $('#content').load(page_url);
     }
