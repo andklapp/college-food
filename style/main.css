@@ -90,6 +90,28 @@ nav a:hover{
     border-color: var(--nav-accent-color);
 }
 
+img#hamburger-button{
+    /* display: none; */
+    padding: 5px;
+    height: 30px;
+}
+
+.collapsed-nav-links{
+    background-color: var(--nav-bg-color);
+    text-align: center;
+    padding: 10px;
+    display: block;
+    position: fixed;
+    top: 50px;
+    width: 150px;
+    right: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.collapsed-nav-links>a{
+    width: 120px;
+}
+
 div#content{
     padding: 1%;
 }
