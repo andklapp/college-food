@@ -18,6 +18,7 @@ function switch_menus_if_small_window() {
         // Switch to hamburger mode
         $('#hamburger-button').show();
         $('#nav-links').addClass('collapsed-nav-links');
+        $('nav h3').addClass('wide-title');
         $('nav').mouseleave(function () {
             $('#nav-links').hide('swing');
         });
@@ -27,6 +28,7 @@ function switch_menus_if_small_window() {
         $('nav').unbind('mouseleave');
         $('#hamburger-button').hide();
         $('#nav-links').removeClass('collapsed-nav-links');
+        $('nav h3').removeClass('wide-title');
         $('#nav-links').show();
 
     }

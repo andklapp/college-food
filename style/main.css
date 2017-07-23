@@ -71,6 +71,10 @@ nav h3{
     color: var(--nav-accent-color);
 }
 
+.wide-title{
+    width: 70%;
+}
+
 /* nav links should take up 30px vertically */
 nav a{
     text-decoration: none;
