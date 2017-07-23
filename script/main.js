@@ -1,5 +1,6 @@
 
 menu_collapse_width = 720;
+nav_height = 50;
 url_variables = url_variables_to_object();
 
 $(document).ready(function () {
@@ -11,6 +12,15 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         switch_menus_if_small_window();
+    });
+
+    $(window).scroll(function () {
+        if($(window).scrollTop() > nav_height) {
+            $('#mainBtn').show();
+        }
+        else {
+            $('#mainBtn').hide();
+        }
     });
 
     load_page(url_variables.page);
@@ -69,3 +79,8 @@ function switch_menus_if_small_window() {
     }
 }
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
