@@ -2,8 +2,11 @@
 <html>
     <head>
         <title>College Food</title>
-        <link rel="stylesheet" href="./style.css" />
-        
+        <link rel="stylesheet" href="./style/main.css" />
+        <link rel="stylesheet" href="./style/containers.css" />
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="./script/main.js"></script>
     </head>
     <body>
 
@@ -12,38 +15,30 @@
 
         <div id="nav-container">
             <nav>
-                <h3>College Food</h3>
-                <a href="./index.html" id="current-page">Home</a>
-                <a href="./recipe-list.html">Recipe List</a>
-                <a href="./cooking-basics.html">Cooking Basics</a>
-                <a href="./about-us.html">About Us</a>
-
-                <a href="#">Contact Us</a>
+                <h3 onClick="switch_menus()">College Food</h3>
+                <img id="hamburger-button" src="./images/hamburger.svg" />
+                <div id="nav-links" >
+                    <!-- TODO: Figure out how to load page titles. -->
+                    <a href="?page=home">Home</a>
+                    <a href="?page=recipe-list">Recipe List</a>
+                    <a href="?page=cooking-basics">Cooking Basics</a>
+                    <a href="?page=about-us">About Us</a>
+                    <a href="?page=contact-us">Contact Us</a>
+                </div>
             </nav>
         </div>
-        <div id="content-container ">
-            <div id="content">
-                <h3>Almost broke? Sick of instant noodles? We can help</h3>
-                <p>
-                    College Food is a small educational site, geared towards college
-                    students who are short on time, money, and effort.
-                </p>
+        <div id="not-nav-container">
+            <div id="content-container">
+                <div id="content">
+                </div>
             </div>
-        </div>
-
-        <!--
-            This is for testing only
-            -->
-        <div style="background-color:white;padding:30px 30px 2500px"></div>
-
-        <div id="footer-container">
-            <footer>
-                Copyright &copy;2017 <a href="#">College Food</a> | Licensed under the GPLv3 | Source available on <a href="https://github.com/andklapp/college-food">Github</a> |
-                <a href="#">Legal Notice</a> |
-                <a href="#">Privacy Policy</a>
-            </footer>
-
-
+            <div id="footer-container">
+                <footer>
+                    Copyright &copy;2017 <a href="#">College Food</a> | Licensed under the GPLv3 | Source available on <a href="https://github.com/andklapp/college-food">Github</a> |
+                    <a href="#">Legal Notice</a> |
+                    <a href="#">Privacy Policy</a>
+                </footer>
+            </div>
         </div>
 
                 

@@ -1,9 +1,4 @@
 /* TODO: Find a nice, handwriting-styled font for the nav bar. */
-/*
-    Do not change height, margins, or padding for div#nav-container,
-    div#content-container, or div#footer-container. It will make the site not
-    fit the the screen. Use margins for the elements inside them instead.
-*/
 
 :root{
     /* Use color variables instead of using actual values in rules. */
@@ -17,7 +12,7 @@
     --content-fg-color: #9E9E9E;
     --content-accent-color: black;
     --content-highlight-color: #A8DC3F;
-    --nav-bg-color: black;
+    --nav-bg-color: rgb(0, 0, 0, .75);
     --nav-fg-color: white; /* not actually used */
     --nav-accent-color: #A8DC3F;
     --nav-highlight-color: white;
@@ -32,15 +27,10 @@
     margin: 0px;
 }
 
-html{
-    height: 100%;
-}
-
 body{
     background-color: var(--content-bg-color);
     color: var(--content-fg-color);
     font-family: sans-serif;
-    height: 100%;
 }
 
 h3, h4{
@@ -62,13 +52,12 @@ a:hover{
 
 div#nav-container{
     background-color: var(--nav-bg-color);
-    background-opacity: 50%;
     color: var(--nav-fg-color);
-    min-height: 10%;
 }
 
 nav{
     text-align: right;
+    height: 100%;
 }
 
 nav h3{
@@ -76,18 +65,27 @@ nav h3{
     display: inline-block;
     text-align: left;
     width: 20%;
-    margin: 1.5%;
+    height: 30px;
+    padding: 10px;
+    size: 10px;
     color: var(--nav-accent-color);
 }
 
+.wide-title{
+    width: 70%;
+}
+
+/* nav links should take up 30px vertically */
 nav a{
     text-decoration: none;
     color: var(--nav-highlight-color);
     display: inline-block;
     border: solid 1px var(--nav-bg-color);
     border-radius: 10%;
-    padding: 1%;
-    margin: 0.6% 0.1%;
+    margin: 5px 3px;
+    height: 20px;
+    vertical-align: center;
+    padding: 8px;
 }
 
 nav a:hover{
@@ -96,19 +94,29 @@ nav a:hover{
     border-color: var(--nav-accent-color);
 }
 
-div#content-container{
-    min-height: 80%;
-
+img#hamburger-button{
+    display: none;
+    padding: 5px;
+    height: 30px;
 }
 
-div#content{
+.collapsed-nav-links{
+    background-color: var(--nav-bg-color);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    top: 50px;
+    width: 150px;
+    right: 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.collapsed-nav-links>a{
+    width: 120px;
+}
+
+section#content{
     padding: 1%;
-}
-
-div#footer-container{
-    background-color: var(--footer-bg-color);
-    color: var(--footer-fg-color);
-    height: 10%;
 }
 
 #recipe-container{
@@ -168,8 +176,11 @@ button{
 
 footer{
     border-top: solid 1px var(--footer-fg-color);
-    padding: 1%;
     text-align: center;
+    padding: 10px;
+    height: 50px;
+    background-color: var(--footer-bg-color);
+    color: var(--footer-fg-color);
 }
 
 footer a{
