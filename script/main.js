@@ -32,17 +32,17 @@ function url_variables_to_object() {
 
 function load_page(page_name) {
     // TODO: Error handling!
-    var page_url = './pages/' + page_name + '.html';
+    var page_url = "";
+
     if(page_name) {
-        $('#content-container').load(page_url, function (response, status, xhr) {
-            if(status == 'error') {
-                alert('There was an error!');
-            }
-        });
+        page_url = './pages/' + page_name + '.html';
     }
     else {
-        load_page('home');
+        page_url = './pages/home.html';
     }
+    alert('loading from ' + page_url);
+
+    $('#content-container').load(page_url);
 }
 
 function switch_menus_if_small_window() {
