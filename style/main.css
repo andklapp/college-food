@@ -191,3 +191,24 @@ footer a{
 footer a:hover{
     color: var(--footer-accent-color);
 }
+
+
+#mainBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#mainBtn:hover {
+  background-color: green;
+}
+
