@@ -34,7 +34,14 @@ function load_page(page_name) {
     // TODO: Error handling!
     var page_url = './pages/' + page_name + '.html';
     if(page_name) {
-        $('#content').load(page_url);
+        $('#content-container').load(page_url, function (response, status, xhr) {
+            if(status == 'error') {
+                alert('There was an error!');
+            }
+        });
+    }
+    else {
+        load_page('home');
     }
 }
 
