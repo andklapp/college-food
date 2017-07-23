@@ -1,9 +1,4 @@
 /* TODO: Find a nice, handwriting-styled font for the nav bar. */
-/*
-    Do not change height, margins, or padding for div#nav-container,
-    div#content-container, or div#footer-container. It will make the site not
-    fit the the screen. Use margins for the elements inside them instead.
-*/
 
 :root{
     /* Use color variables instead of using actual values in rules. */
@@ -36,7 +31,6 @@ body{
     background-color: var(--content-bg-color);
     color: var(--content-fg-color);
     font-family: sans-serif;
-    height: 100%;
 }
 
 h3, h4{
@@ -63,6 +57,7 @@ div#nav-container{
 
 nav{
     text-align: right;
+    height: 100%;
 }
 
 nav h3{
@@ -70,18 +65,23 @@ nav h3{
     display: inline-block;
     text-align: left;
     width: 20%;
-    margin: 1.5%;
+    height: 30px;
+    padding: 10px;
+    size: 10px;
     color: var(--nav-accent-color);
 }
 
+/* nav links should take up 30px vertically */
 nav a{
     text-decoration: none;
     color: var(--nav-highlight-color);
     display: inline-block;
     border: solid 1px var(--nav-bg-color);
     border-radius: 10%;
-    padding: 1%;
-    margin: 0.6% 0.1%;
+    margin: 5px 3px;
+    height: 20px;
+    vertical-align: center;
+    padding: 8px;
 }
 
 nav a:hover{
