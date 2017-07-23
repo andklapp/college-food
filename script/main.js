@@ -1,5 +1,6 @@
 
 menu_collapse_width = 720;
+url_variables = url_variables_to_object();
 
 $(document).ready(function () {
     switch_menus_if_small_window();
@@ -35,4 +36,18 @@ function switch_menus_if_small_window() {
         });
 
     }
+}
+
+function url_variables_to_object() {
+    var url_variable_object = {};
+    var all_variables_string = decodeURIComponent(window.location.search.substring(1));
+    var variable_pair_list = all_variables_string.split('&');
+    for(i = 0; i < variable_pair_list.length; i++) {
+        var variable_pair = variable_pair_list[i].split('=');
+        if(variable_pair[1]) {
+            url_variable_object[variable_pair[0]] = variable_pair[1];
+        }
+    }
+
+    return url_variable_object;
 }
