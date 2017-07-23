@@ -23,6 +23,10 @@ $(document).ready(function () {
         }
     });
 
+    $('#mainBtn').click(function () {
+        $(window).scrollTop(0);
+    });
+
     load_page(url_variables.page);
 });
 
@@ -77,10 +81,4 @@ function switch_menus_if_small_window() {
         });
 
     }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 }
