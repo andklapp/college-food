@@ -152,7 +152,8 @@ button{
 footer{
     border-top: solid 1px var(--footer-fg-color);
     text-align: center;
-    padding: 1%;
+    padding: 10px;
+    height: 50px;
     background-color: var(--footer-bg-color);
     color: var(--footer-fg-color);
 }
