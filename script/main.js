@@ -40,7 +40,6 @@ function load_page(page_name) {
     else {
         page_url = './pages/home.html';
     }
-    alert('loading from ' + page_url);
 
     $('#content-container').load(page_url);
 }
