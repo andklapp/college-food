@@ -12,7 +12,31 @@ $(document).ready(function () {
     $(window).resize(function () {
         switch_menus_if_small_window();
     });
+
+    load_page(url_variables.page);
 });
+
+function url_variables_to_object() {
+    var url_variable_object = {};
+    var all_variables_string = decodeURIComponent(window.location.search.substring(1));
+    var variable_pair_list = all_variables_string.split('&');
+    for(i = 0; i < variable_pair_list.length; i++) {
+        var variable_pair = variable_pair_list[i].split('=');
+        if(variable_pair[1]) {
+            url_variable_object[variable_pair[0]] = variable_pair[1];
+        }
+    }
+
+    return url_variable_object;
+}
+
+function load_page(page_name) {
+    var page_url = './pages/' + page_name + '.html';
+    alert(page_url);
+    if(page_name) {
+        $('#content').load(page_url);
+    }
+}
 
 function switch_menus_if_small_window() {
     if($(window).width() <= menu_collapse_width) {
@@ -38,16 +62,3 @@ function switch_menus_if_small_window() {
     }
 }
 
-function url_variables_to_object() {
-    var url_variable_object = {};
-    var all_variables_string = decodeURIComponent(window.location.search.substring(1));
-    var variable_pair_list = all_variables_string.split('&');
-    for(i = 0; i < variable_pair_list.length; i++) {
-        var variable_pair = variable_pair_list[i].split('=');
-        if(variable_pair[1]) {
-            url_variable_object[variable_pair[0]] = variable_pair[1];
-        }
-    }
-
-    return url_variable_object;
-}
