@@ -91,7 +91,7 @@ nav a:hover{
 }
 
 img#hamburger-button{
-    /* display: none; */
+    display: none;
     padding: 5px;
     height: 30px;
 }
