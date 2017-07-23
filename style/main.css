@@ -101,7 +101,6 @@ img#hamburger-button{
 }
 
 .collapsed-nav-links{
-    display: none;
     background-color: var(--nav-bg-color);
     text-align: center;
     padding: 10px;

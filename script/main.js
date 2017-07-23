@@ -16,20 +16,23 @@ $(document).ready(function () {
 function switch_menus_if_small_window() {
     if($(window).width() <= menu_collapse_width) {
         // Switch to hamburger mode
-        $('#hamburger-button').show();
-        $('#nav-links').addClass('collapsed-nav-links');
-        $('nav h3').addClass('wide-title');
+        $('#nav-links').fadeOut('swing', function () {
+            $('#hamburger-button').fadeIn('swing');
+            $('#nav-links').addClass('collapsed-nav-links');
+            $('nav h3').addClass('wide-title');
+        });
         $('nav').mouseleave(function () {
-            $('#nav-links').hide('swing');
+            $('#nav-links').fadeOut('swing');
         });
     }
     else {
         // Switch to normal menu mode
         $('nav').unbind('mouseleave');
-        $('#hamburger-button').hide();
-        $('#nav-links').removeClass('collapsed-nav-links');
-        $('nav h3').removeClass('wide-title');
-        $('#nav-links').show();
+        $('#hamburger-button').fadeOut('swing', function () {
+            $('#nav-links').removeClass('collapsed-nav-links');
+            $('nav h3').removeClass('wide-title');
+            $('#nav-links').fadeIn('swing');
+        });
 
     }
 }
