@@ -3,8 +3,13 @@
     <head>
         <title>College Food</title>
         <link rel="stylesheet" href="./style.css" />
+        
     </head>
     <body>
+
+        <button onclick="topFunction()" id="mainBtn" title="Slide to Top">^^^^^</button>
+        
+
         <div id="nav-container">
             <nav>
                 <h3>College Food</h3>
@@ -16,7 +21,7 @@
                 <a href="#">Contact Us</a>
             </nav>
         </div>
-        <div id="content-container">
+        <div id="content-container ">
             <div id="content">
                 <h3>Almost broke? Sick of instant noodles? We can help</h3>
                 <p>
@@ -25,12 +30,42 @@
                 </p>
             </div>
         </div>
+
+        <!--
+            This is for testing only
+            -->
+        <div style="background-color:white;padding:30px 30px 2500px"></div>
+
         <div id="footer-container">
             <footer>
                 Copyright &copy;2017 <a href="#">College Food</a> | Licensed under the GPLv3 | Source available on <a href="https://github.com/andklapp/college-food">Github</a> |
                 <a href="#">Legal Notice</a> |
                 <a href="#">Privacy Policy</a>
             </footer>
+
+
         </div>
+
+                
+            <script>
+            // this is purely test code for javascript 
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                    document.getElementById("mainBtn").style.display = "block";
+                } else {
+                    document.getElementById("mainBtn").style.display = "none";
+                }
+            }
+
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                }
+            </script>
+
     </body>
 </html>
