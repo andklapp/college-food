@@ -1,5 +1,6 @@
 
 menu_collapse_width = 720;
+nav_height = 50;
 url_variables = url_variables_to_object();
 
 $(document).ready(function () {
@@ -11,6 +12,19 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         switch_menus_if_small_window();
+    });
+
+    $(window).scroll(function () {
+        if($(window).scrollTop() > nav_height) {
+            $('button#to-top').show();
+        }
+        else {
+            $('button#to-top').hide();
+        }
+    });
+
+    $('button#to-top').click(function () {
+        $(window).scrollTop(0);
     });
 
     load_page(url_variables.page);
@@ -67,4 +81,3 @@ function switch_menus_if_small_window() {
 
     }
 }
-

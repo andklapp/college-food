@@ -193,22 +193,26 @@ footer a:hover{
 }
 
 
-#mainBtn {
+button#to-top {
   display: none;
   position: fixed;
   bottom: 30px;
   right: 20px;
   z-index: 99;
   border: none;
-  outline: none;
-  background-color: blue;
+  background-color: var(--content-accent-color);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
 }
 
-#mainBtn:hover {
-  background-color: green;
+button#to-top:hover {
+  background-color: var(--content-highlight-color);
+}
+
+button#to-top>img{
+  width: 30px;
+  height: 30px;
 }
 
