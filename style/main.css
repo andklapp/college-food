@@ -216,3 +216,54 @@ button#to-top>img{
   height: 30px;
 }
 
+div#slideshow-container{
+    text-align: center;
+    height: 70vh;
+}
+
+div#image-container{
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 50vw;
+    border: 2px solid black;
+    background-color: black;
+    background-image: url("../images/tofu.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.slideshow-button{
+    background-color: var(--nav-bg-color);
+    color: var(--nav-highlight-color);
+    padding-top: 34vh;
+    padding-bottom: 34vh;
+    height: 2vh;
+    width: 3vw;
+
+}
+
+div.slideshow-button:hover{
+    background-color: var(--nav-accent-color);
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+div#center-container{
+    text-align: center;
+    width: 100%;
+    margin: 0px 3vw;
+    padding: 1%;
+}
+
+div#center-container>h3{
+    color: var(--nav-accent-color);
+    text-shadow: 1px 1px 1px black;
+}
