@@ -27,4 +27,5 @@ div#content{
 
 div#footer-container{
     min-height: 50px;
+    clear: both;
 }
