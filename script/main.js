@@ -52,6 +52,7 @@ function load_page(page_name) {
         page_url = './pages/' + page_name + '.html';
     }
     else {
+        page_name = 'home'
         page_url = './pages/home.html';
     }
 
