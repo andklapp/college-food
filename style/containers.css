@@ -1,7 +1,7 @@
 /* containers.css defines the container layout and sizing */
 
 html, body{
-    height: 100vh;
+    height: 100%;
 }
 
 div#nav-container{
@@ -27,4 +27,5 @@ div#content{
 
 div#footer-container{
     min-height: 50px;
+    clear: both;
 }
