@@ -50,6 +50,11 @@ a:hover{
     color: var(--content-accent-color);
 }
 
+iframe{
+    width: 80vw;
+    height: calc(80vh - 50px);
+}
+
 div#nav-container{
     background-color: var(--nav-bg-color);
     color: var(--nav-fg-color);
