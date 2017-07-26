@@ -73,22 +73,22 @@ function initialize_recipe_slideshow() {
                 var img_url = './images/' + recipe["image"];
                 var page_url = './recipes/' + recipe["filename"];
                 var $img_div = build_recipe_image_div(recipe["title"], img_url, page_url);
-                $('#slick-container').append($img_div);
+                $('#center-container').append($img_div);
                 console.log($img_div);
             });
-            $('#slick-container').slick({
-                variableWidth: true,
-                centerMode: true 
-                });
+            $('#center-container').slick({
+                prevArrow: $('#slick-prevArrow'),
+                nextArrow: $('#slick-nextArrow')
+            });
         }
     });
 
 }
 
 function build_recipe_image_div(title, image_url, page_url) {
-    return $('<div />')
-        .append('<h3 />')
-            .text(title)
+    return $('<div></div>')
+        .html('<h3>' + title + '</h3>')
+        .css({'background-image': 'url("' + image_url + '")'});
 }
 
 function switch_menus_if_small_window() {
