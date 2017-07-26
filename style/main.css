@@ -283,3 +283,20 @@ div#center-container>h3{
     color: var(--nav-accent-color);
     text-shadow: 1px 1px 1px black;
 }
+
+.clear{
+    clear: both;
+}
+
+section.cooking-basics{
+    padding: 1vh 0vh;
+}
+section.cooking-basics>p{
+    width: 60%;
+    float: left;
+}
+
+section.cooking-basics>img{
+    max-width: 35%;
+    float: right;
+}
