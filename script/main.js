@@ -56,7 +56,7 @@ function load_page(page_name) {
     }
 
     $('#content-container').load(page_url, function() {
-            if(page_name == 'slide-show') {
+            if(page_name == 'home') {
                 initialize_recipe_slideshow();
             }
         });
@@ -86,6 +86,7 @@ function initialize_recipe_slideshow() {
 }
 
 function build_recipe_image_div(title, image_url, page_url) {
+    // TODO: Make the recipe loading prettier and not immediate.
     return $('<div></div>')
         .html('<h3>' + title + '</h3>')
         .css({'background-image': 'url("' + image_url + '")'})
