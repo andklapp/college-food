@@ -88,7 +88,10 @@ function initialize_recipe_slideshow() {
 function build_recipe_image_div(title, image_url, page_url) {
     return $('<div></div>')
         .html('<h3>' + title + '</h3>')
-        .css({'background-image': 'url("' + image_url + '")'});
+        .css({'background-image': 'url("' + image_url + '")'})
+        .click(function() {
+            $('#recipe-container').load(page_url);
+        });
 }
 
 function switch_menus_if_small_window() {

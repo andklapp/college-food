@@ -258,8 +258,6 @@ div.slideshow-button{
     padding-bottom: 34vh;
     height: 2vh;
     width: 3vw;
-    z-index: 100000;
-
 }
 
 div.slideshow-button:hover{
