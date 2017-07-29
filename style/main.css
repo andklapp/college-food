@@ -139,10 +139,6 @@ img#hamburger-button{
     width: 120px;
 }
 
-section#content{
-    padding: 1%;
-}
-
 #recipe-container{
     clear: both;
     width: 98%;
@@ -312,9 +308,14 @@ div#center-container>h3{
     clear: both;
 }
 
+section#content{
+    padding:50px;
+}
+
 section.cooking-basics{
     padding: 1vh 0vh;
 }
+
 section.cooking-basics>p{
     width: 60%;
     float: left;
@@ -323,4 +324,22 @@ section.cooking-basics>p{
 section.cooking-basics>img{
     max-width: 35%;
     float: right;
+}
+
+div#home-card{
+    padding-top: var(--nav-height);
+    width: 100%;
+    text-align: right;
+}
+
+div#home-images>div{
+    position: absolute;
+    top: 0;
+    left 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
