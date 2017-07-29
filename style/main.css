@@ -12,7 +12,7 @@
     --content-fg-color: #9E9E9E;
     --content-accent-color: black;
     --content-highlight-color: #A8DC3F;
-    --nav-bg-color: rgba(0, 0, 0, .75);
+    --nav-bg-color: rgba(0, 0, 0, .8);
     --nav-fg-color: white; /* not actually used */
     --nav-accent-color: #A8DC3F;
     --nav-highlight-color: white;
@@ -21,6 +21,17 @@
     --footer-accent-color: #A8DC3F;
     --footer-highlight-color: white;
 }
+
+
+@font-face {
+    font-family: milkshake;
+    src: url("./style/Milkshake.ttf");
+}
+
+
+
+
+
 
 *{
     padding: 0px;
@@ -33,7 +44,15 @@ body{
     font-family: sans-serif;
 }
 
-h3, h4{
+h3{
+
+    font-family: milkshake;
+    color: var(--content-accent-color);
+}
+
+h4{
+
+    font-family: milkshake;
     color: var(--content-accent-color);
 }
 
