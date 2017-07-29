@@ -1,19 +1,29 @@
 #!/usr/bin/env bash
 
-PAGES_DIRECTORY="./pages/"
-HEADER_FILE="./header.html"
-FOOTER_FILE="./footer.html"
+WORK_DIRECTORY=$(pwd)
+BUILD_DIRECTORY="out"
+PAGES_DIRECTORY="pages/"
+HEADER_FILE="header.html"
+FOOTER_FILE="footer.html"
 
-STATIC_INCLUDES=("style" "script" "slick")
+STATIC_INCLUDES=("style" "script" "slick" "images")
 
-rm -R out
-mkdir out
+PAGES_PATH="$WORK_DIRECTORY/$PAGES_DIRECTORY"
+HEADER_PATH="$WORK_DIRECTORY/$HEADER_FILE"
+FOOTER_PATH="$WORK_DIRECTORY/$FOOTER_FILE"
+BUILD_PATH="$WORK_DIRECTORY/$BUILD_DIRECTORY"
 
-for file in $(ls "$PAGES_DIRECTORY"); do
-    cat "$HEADER_FILE" "$PAGES_DIRECTORY/$file" "$FOOTER_FILE" > "out/$file"
+rm -R $BUILD_PATH
+mkdir $BUILD_PATH
+
+for file in $(ls "$PAGES_PATH"); do
+    echo "Building page $file."
+    cat "$HEADER_PATH" "$PAGES_PATH/$file" "$FOOTER_PATH" > "$BUILD_PATH/$file"
 done
 
 for file in ${STATIC_INCLUDES[*]}; do
-    echo $file
-    ln -s "$file" -T "out/$file"
+    echo "Copying directory $file."
+    cp -R "$WORK_DIRECTORY/$file" -T "$BUILD_PATH/$file"
 done
+
+echo "Site generated and written to $BUILD_PATH."
