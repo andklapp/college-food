@@ -22,6 +22,17 @@
     --footer-highlight-color: white;
 }
 
+
+@font-face {
+    font-family: milkshake;
+    src: url("./style/Milkshake.ttf");
+}
+
+
+
+
+
+
 *{
     padding: 0px;
     margin: 0px;
@@ -35,13 +46,13 @@ body{
 
 h3{
 
-    font-family: "Raleway", sans-serif;
+    font-family: milkshake;
     color: var(--content-accent-color);
 }
 
 h4{
 
-    font-family: "Raleway", sans-serif;
+    font-family: milkshake;
     color: var(--content-accent-color);
 }
 
