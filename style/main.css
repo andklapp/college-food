@@ -101,7 +101,7 @@ nav h3{
 
 /* nav links should take up 30px vertically */
 nav a{
-    text-decoration: none;
+    font-family: milkshake;
     color: var(--nav-highlight-color);
     display: inline-block;
     border: solid 1px var(--nav-bg-color);
