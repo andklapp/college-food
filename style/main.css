@@ -120,10 +120,6 @@ img#hamburger-button{
     width: 120px;
 }
 
-section#content{
-    padding: 1%;
-}
-
 #recipe-container{
     clear: both;
     width: 98%;
@@ -304,4 +300,24 @@ section.cooking-basics>p{
 section.cooking-basics>img{
     max-width: 35%;
     float: right;
+}
+
+div#home-images, div#home-card{
+    width: 100%;
+}
+
+div#home-images, div#home-images>div{
+    position: absolute;
+    top: 0;
+    left 0;
+    z-index: -1;
+}
+
+div#home-images>div{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
