@@ -12,7 +12,7 @@
     --content-fg-color: #9E9E9E;
     --content-accent-color: black;
     --content-highlight-color: #A8DC3F;
-    --nav-bg-color: rgba(0, 0, 0, .75);
+    --nav-bg-color: rgba(0, 0, 0, .50);
     --nav-fg-color: white; /* not actually used */
     --nav-accent-color: #A8DC3F;
     --nav-highlight-color: white;
