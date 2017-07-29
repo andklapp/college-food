@@ -289,6 +289,10 @@ div#center-container>h3{
     clear: both;
 }
 
+section#content{
+    padding:50px;
+}
+
 section.cooking-basics{
     padding: 1vh 0vh;
 }
