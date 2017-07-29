@@ -12,7 +12,7 @@
     --content-fg-color: #9E9E9E;
     --content-accent-color: black;
     --content-highlight-color: #A8DC3F;
-    --nav-bg-color: rgba(0, 0, 0, .50);
+    --nav-bg-color: rgba(0, 0, 0, .8);
     --nav-fg-color: white; /* not actually used */
     --nav-accent-color: #A8DC3F;
     --nav-highlight-color: white;
@@ -33,7 +33,15 @@ body{
     font-family: sans-serif;
 }
 
-h3, h4{
+h3{
+
+    font-family: "Raleway", sans-serif;
+    color: var(--content-accent-color);
+}
+
+h4{
+
+    font-family: "Raleway", sans-serif;
     color: var(--content-accent-color);
 }
 
