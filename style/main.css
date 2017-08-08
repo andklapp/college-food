@@ -39,13 +39,7 @@ body{
     font-family: sans-serif;
 }
 
-h3{
-
-    font-family: milkshake;
-    color: var(--content-accent-color);
-}
-
-h4{
+h3, h4{
 
     font-family: milkshake;
     color: var(--content-accent-color);
@@ -303,10 +297,6 @@ div#center-container>h3{
     clear: both;
 }
 
-section#content{
-    padding:50px;
-}
-
 section.cooking-basics{
     padding: 1vh 0vh;
 }
@@ -324,7 +314,13 @@ section.cooking-basics>img{
 div#home-card{
     padding-top: var(--nav-height);
     width: 100%;
+    height: 100vh;
     text-align: right;
+    background-color: var(--nav-bg-color);
+}
+
+div#home-card h1{
+    font-size: 4em;
 }
 
 div#home-images>div{
