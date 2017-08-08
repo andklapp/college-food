@@ -305,6 +305,10 @@ section.cooking-basics>img{
     float: right;
 }
 
+section#content{
+    padding-top: calc(var(--nav-height) + 1vh);
+}
+
 div#home-card{
     padding-top: calc(var(--nav-height) + 5vh);
     width: 100%;
