@@ -28,11 +28,6 @@
     src: url("./style/Milkshake.ttf");
 }
 
-
-
-
-
-
 *{
     padding: 0px;
     margin: 0px;
@@ -44,13 +39,7 @@ body{
     font-family: sans-serif;
 }
 
-h3{
-
-    font-family: milkshake;
-    color: var(--content-accent-color);
-}
-
-h4{
+h3, h4{
 
     font-family: milkshake;
     color: var(--content-accent-color);
@@ -325,7 +314,13 @@ section.cooking-basics>img{
 div#home-card{
     padding-top: calc(var(--nav-height) + 5vh);
     width: 100%;
+    height: calc(95vh - var(--nav-height));
     text-align: right;
+    background-color: var(--nav-bg-color);
+}
+
+div#home-card h1{
+    font-size: 4em;
 }
 
 div#home-images{
