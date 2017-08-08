@@ -2,12 +2,6 @@
 
 :root{
     /* Use color variables instead of using actual values in rules. */
-
-    /*
-        These are by no means final. I chose these colors because they're easy
-        to differentiate while building. We might end up not using all of them.
-    */
-
     --content-bg-color: white;
     --content-fg-color: #9E9E9E;
     --content-accent-color: black;
