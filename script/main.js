@@ -65,7 +65,7 @@ function load_page(page_name) {
 
 function initialize_recipe_slideshow() {
     recipe_data = $.ajax({
-        url:'recipes/list.json',
+        url:'./script/recipe-list.json',
         dataType: 'json',
         mimeType: 'application/json',
         success: function(result) {
