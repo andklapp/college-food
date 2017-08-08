@@ -306,6 +306,7 @@ section.cooking-basics>img{
 }
 
 section#content{
+    padding: 0px 2vh;
     padding-top: calc(var(--nav-height) + 1vh);
 }
 
