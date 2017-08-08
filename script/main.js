@@ -1,7 +1,6 @@
 
 menu_collapse_width = 1000;
 nav_height = 50;
-url_variables = url_variables_to_object();
 
 $(document).ready(function () {
     switch_menus_if_small_window();
@@ -27,41 +26,7 @@ $(document).ready(function () {
         $(window).scrollTop(0);
     });
 
-    load_page(url_variables.page);
 });
-
-function url_variables_to_object() {
-    var url_variable_object = {};
-    var all_variables_string = decodeURIComponent(window.location.search.substring(1));
-    var variable_pair_list = all_variables_string.split('&');
-    for(i = 0; i < variable_pair_list.length; i++) {
-        var variable_pair = variable_pair_list[i].split('=');
-        if(variable_pair[1]) {
-            url_variable_object[variable_pair[0]] = variable_pair[1];
-        }
-    }
-
-    return url_variable_object;
-}
-
-function load_page(page_name) {
-    // TODO: Error handling!
-    var page_url = "";
-
-    if(page_name) {
-        page_url = './pages/' + page_name + '.html';
-    }
-    else {
-        page_name = 'home'
-        page_url = './pages/home.html';
-    }
-
-    $('#content-container').load(page_url, function() {
-            if(page_name == 'home') {
-                initialize_recipe_slideshow();
-            }
-        });
-}
 
 function initialize_recipe_slideshow() {
     recipe_data = $.ajax({
