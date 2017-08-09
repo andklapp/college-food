@@ -417,3 +417,8 @@ div.store-address p{
 iframe#map{
     margin: 0px 15vh;
 }
+
+.home>h3{
+    text-align: center;
+    margin: 2vh 2vw;
+}
