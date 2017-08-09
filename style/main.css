@@ -14,6 +14,8 @@
     --footer-fg-color: #9E9E9E;
     --footer-accent-color: #A8DC3F;
     --footer-highlight-color: white;
+
+    --recipe-bg-color: #EEE;
 }
 
 
@@ -122,13 +124,40 @@ img#hamburger-button{
     width: 120px;
 }
 
+section.recipe-top{
+    width: calc(100% - 4vw);
+    border: 2px solid grey;
+    border-radius: 5px;
+    overflow: auto;
+    background-color: var(--recipe-bg-color);
+    padding: 2vh 2vw;
+}
+
+.clear{
+    clear: both;
+}
+
+section.recipe-top>div{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50vw;
+    height: 50vh;
+    float: right;
+}
+
+section.recipe-top>h3, section.recipe-top>p{
+    width: calc(95% - 50vw);
+    float: left;
+}
+
 #recipe-container{
     clear: both;
     width: 98%;
-    padding: 1%;
 }
 
 #ingredients{
+    padding: 2vh 2vw;
     float: left;
     width: 40%;
 }
@@ -138,6 +167,7 @@ img#hamburger-button{
 }
 
 #process{
+    padding: 2vh 2vw;
     float: right;
     width: 50%;
 }
