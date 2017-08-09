@@ -45,6 +45,10 @@ p{
     margin: 1% 0%;
 }
 
+li{
+    margin: 2vh 2vw;
+}
+
 a{
     text-decoration: none;
     color: var(--content-highlight-color);
