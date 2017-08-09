@@ -1,7 +1,7 @@
 /* containers.css defines the container layout and sizing */
 
 :root{
-    --nav-height: 50px;
+    --nav-height: 70px;
     --footer-height: 50px;
     --content-height: calc(100vh - var(--footer-height));
 }

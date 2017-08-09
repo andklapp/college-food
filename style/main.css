@@ -88,6 +88,14 @@ nav h3{
     width: 70%;
 }
 
+nav#social-links{
+    height: 20px;
+}
+
+nav#social-links>img{
+    margin: 0px 2px;
+}
+
 /* nav links should take up 30px vertically */
 nav a{
     font-family: milkshake;

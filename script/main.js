@@ -1,6 +1,7 @@
 
 menu_collapse_width = 1000;
-nav_height = 50;
+nav_height = 70;
+max_nav_height = 70;
 
 $(document).ready(function () {
     switch_menus_if_small_window();
@@ -14,11 +15,14 @@ $(document).ready(function () {
     });
 
     $(window).scroll(function () {
-        if($(window).scrollTop() > nav_height) {
+        if($(window).scrollTop() > max_nav_height) {
             $('button#to-top').show();
+            $('#social-links').hide(function () {
+                });
         }
         else {
             $('button#to-top').hide();
+            $('#social-links').show();
         }
     });
 
