@@ -306,6 +306,7 @@ section.cooking-basics>img{
 }
 
 section#content{
+    padding: 0px 2vh;
     padding-top: calc(var(--nav-height) + 1vh);
 }
 
@@ -346,4 +347,31 @@ div#home-images>div{
 
 div#home-card>h1{
     font-size: 4em;
+}
+
+div.store-address{
+    text-align: center;
+    margin: 5vh 20vw;
+}
+
+div.store-address h3{
+    display: inline;
+    float: left;
+    padding-bottom: 2vh;
+}
+
+div.store-address h3:hover{
+    color: var(--content-highlight-color);
+}
+
+div.store-address span.address{
+    float: right;
+}
+
+div.store-address p{
+    clear: both;
+}
+
+iframe#map{
+    margin: 0px 15vh;
 }
